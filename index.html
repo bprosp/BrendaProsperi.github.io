@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="./css/estilo.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    
+    <!--Fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charmonman:wght@700&family=Kulim+Park&family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <title>Proyecto CV</title>
+</head>
+
+<body>
+    <header id="encabezado" class="container-fluid">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <img src="./img/fotoM.png" class="img-thumbnail" alt="Foto CV">
+                </div>
+                <div class="nombre col">
+                    <h1>Emilia Ramírez</h1>
+                    <h3>Lic. en Administración</h3>
+                    <button id="btnModal">Carta de Presentación</button> 
+              </div>
+            </div>
+        </div>
+    </header>
+    <main class="container-fluid">
+        <div class="container"> 
+            <div class="row">
+                <div class="col">
+                    <section>
+                        <h2>Contacto</h2>
+                        <div class="IconAnimation">
+                            <strong>
+                                <i id="envelope" class="fa-solid fa-envelope"></i> 
+                                hola@sitio.com
+                            </strong>
+                        </div>
+                        <div class="IconAnimation">
+                            <strong><i id="phone" class="fa-solid fa-phone-volume"></i>Cel: 1234-5678</strong>
+                        </div>
+                        <div class="IconAnimation">
+                            <strong><i id="at" class="fa-solid fa-at"></i>@sitioweb</strong>
+                        </div>
+                        <div class="IconAnimation">
+                            <strong><i id="location" class="fa-solid fa-location-dot"></i>Calle Cualquiera 123, Cualquier Lugar.</strong>
+                        </div>
+                    </section>
+            
+            
+                    <section>
+                        <h2>Formación académica</h2>
+                        <ul>
+                            <li>MBA en Administración de Empresas
+                                <div>Instituto Roosevelt, 2022.</div>
+                            </li>
+                            <li>Lic. en Administración
+                                <div>Universidad de Ciencias Económicas, 2018.</div>
+                            </li>
+                            <li>Bachiller en Administración de Empresas
+                                <div>Colegio Secundario Fauget, 2012.</div>
+                            </li>
+                        </ul>
+                    </section>
+            
+            
+                    <section>
+                        <h2>Otros conocimientos y diplomaturas</h2>
+                        <ul>
+                            <li>Seminario de Capacitación en Crypto
+                                <div>Institución Increíble, 2021.</div>
+                            </li>
+                            <li>Curso de Manejo de Redes Sociales
+                                <div>Institución Increíble, 2019.</div>
+                            </li>
+                        </ul>
+                    </section>
+            
+            
+                    <section>
+                        <h2>Idiomas</h2>
+                        <ul>
+                            <li>Inglés
+                                <div>Nivel oral: Bilingüe. |  Nivel escrito: Avanzado.</div>
+                            </li>
+                            <li>Portugués
+                                <div>Nivel oral: Intermedio. |  Nivel escrito: Intermedio.</div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="col">
+                    <section>
+                        <h2>Experiencia laboral</h2>
+                        <h3>Asistente de gerencia</h3>
+                        <h4>Empresa Hogwarts SA / Agosto 2019 - Presente</h4>
+                        <ul>
+                            <li>Asistencia administrativa integral a Gerencia.</li>
+                            <li>Seguimiento de Agenda. Revisión de idoneidad de documentos y control de archivos.</li>
+                        </ul>
+                        <h3>Asistente administrativo</h3>
+                        <h4>Empresa Borcelle / Enero 2017 - Julio 2018</h4>
+                        <ul>
+                            <li>Recepción de clientes. Manejo de conmutador.</li>
+                            <li> Asistencia a mesa de entradas. Organización de libro de entrada y salida. Mantenimiento de archivos.</li>    
+                        </ul>
+                        <h3>Pasante administrativo</h3>
+                        <h4>Empresa Fauget / Enero 2016 - Julio 2017</h4>
+                        <ul>
+                            <li>Recepción de Clientes. Manejo de Conmutador.</li>
+                            <li>Asistencia a mesa de entradas. Organización de libro de entrada y salida.</li>
+                        </ul>
+                    </section>    
+                </div>
+            </div>
+        </div>
+        <!--Ventana modal-->
+<div id="myModal" class="modalContainer">
+    <div class="modal-content">
+        <span class="close">×</span> <h2>Carta de presentación</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo architecto, dolorem dolorum optio quis alias quae sit molestiae voluptates nostrum aperiam quidem nam provident vero excepturi impedit iusto quibusdam dolore iste dicta voluptatum, asperiores magnam in ab. Voluptatem labore ab eveniet, corrupti deserunt mollitia, ipsa consequatur quisquam fuga earum quasi?</p> 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo architecto, dolorem dolorum optio quis alias quae sit molestiae voluptates nostrum aperiam quidem nam provident vero excepturi impedit iusto quibusdam dolore iste dicta voluptatum, asperiores magnam in ab. Voluptatem labore ab eveniet, corrupti deserunt mollitia, ipsa consequatur quisquam fuga earum quasi?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo architecto, dolorem dolorum optio quis alias quae sit molestiae voluptates nostrum aperiam quidem nam provident vero excepturi impedit iusto quibusdam dolore iste dicta voluptatum, asperiores magnam in ab. Voluptatem labore ab eveniet, corrupti deserunt mollitia, ipsa consequatur quisquam fuga earum quasi?</p>
+    </div>
+</div> 
+ <!--Fin ventana modal-->
+    </main>
+    <script src="./js/app.js"></script>
+</body>
+</html>
