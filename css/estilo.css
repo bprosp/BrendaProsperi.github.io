@@ -1,0 +1,98 @@
+body {
+    background-color: #EFCAE2 !important;    
+}
+
+header {
+    background-color: #A91F71;
+    font-family: 'Kulim Park', sans-serif;
+}
+
+h1 {
+    font-size: 60px !important;
+    font-family: 'Charmonman', cursive;
+    padding-top: 36px;
+}
+
+h2 {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-size: 36px !important;
+}
+
+h3 {
+    font-weight: bold !important;
+    padding: 15px;
+}
+
+main {
+    font-family: 'Kulim Park', sans-serif;
+}
+
+img {
+     background: white;
+    border-radius: 50% !important;
+     height: 300px;
+     width: 300px;
+}
+
+div.nombre {
+    color: white;
+}
+
+section {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+i {
+    padding-right: 10px;
+    padding: 10px;
+}
+
+div.IconAnimation strong:hover i {
+    transition: transform .5s ease-in;
+    transform: rotate(360deg);
+}
+
+/** Estilo de Ventana Modal*/
+
+button {
+    background-color: #EFCAE2;
+    font-family: 'Oleo Script Swash Caps', cursive !important;
+}
+
+.modalContainer {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modalContainer .modal-content {
+    background-color: #EFCAE2;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-top: 10px solid #A91F71;
+    width: 60%;
+}
+
+.modalContainer .close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modalContainer .close:hover,
+.modalContainer .close:focus {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
